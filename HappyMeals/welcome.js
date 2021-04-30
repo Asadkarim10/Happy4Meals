@@ -15,22 +15,9 @@ class Welcome extends Component {
                 </View>
                
                 <View style= { styles.Bottomcontainer}>
-
-
-                    <View style={{
-                        height: 80,
-                        width: wp("70%"),
-                        justifyContent: 'center',
-                        alignItems: 'center'
-
-                    }}>
-                        <Text style={{
-                            fontSize: 40,
-                            fontWeight: 'bold',
-                            color: 'white'
-                        }}>Happy Meals</Text>
+                    <View  style = {styles.InsideContainer}>
+                        <Text style= {styles.MealsText}>Happy Meals</Text>
                     </View>
-
                     <View style={{
                         width: wp("96%"),
                         alignSelf: 'center'
@@ -39,9 +26,7 @@ class Welcome extends Component {
                             height: 60,
                             justifyContent: 'center',
                             width: wp("80%"),
-
                             alignItems: 'center',
-                            // alignSelf:'center'
                         }}>
                             <Text style={{
                                 fontSize: 22,
@@ -99,6 +84,20 @@ const styles = StyleSheet.create({
         backgroundColor: "#f15b5d",
         borderTopRightRadius: 30,
         borderTopLeftRadius: 30
-    }
+    },
+    InsideContainer : {
+        height: 80,
+        width: wp("70%"),
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+
+    MealsText : {
+        fontSize: 40,
+        fontWeight: 'bold',
+        color: 'white'
+    },
+
+
 
 });
