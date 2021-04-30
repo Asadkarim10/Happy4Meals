@@ -5,31 +5,16 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 class Welcome extends Component {
     render(props) {
         return (
-            <View style={{
-                flex: 1,
-                backgroundColor: 'white'
-            }}>
-                <View style={{
-                    flex: 3,
-
-                }}>
+            <View style={styles.container}>
+                <View style={{ flex: 3 }}>
                     <ScrollView>
-
-
                         <Image
                             style={styles.tinyLogo}
-                            source={require("./Assets/HM.jpeg")}
-                        />
+                            source={require("./Assets/HM.jpeg")}/>
                     </ScrollView>
-
                 </View>
-                <View style={{
-                    flex: 1.3,
-                    backgroundColor: "#f15b5d",
-                    borderTopRightRadius: 30,
-                    borderTopLeftRadius: 30
-
-                }}>
+               
+                <View style= { styles.Bottomcontainer}>
 
 
                     <View style={{
@@ -104,5 +89,16 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         height: 520,
     },
+
+    container: {
+        flex: 1,
+        backgroundColor: 'white'
+    },
+    Bottomcontainer : {
+        flex: 1.3,
+        backgroundColor: "#f15b5d",
+        borderTopRightRadius: 30,
+        borderTopLeftRadius: 30
+    }
 
 });
