@@ -43,8 +43,7 @@ class Welcome extends Component {
                         width: wp('90%'),
                         alignSelf: 'center',
                     }}>
-                        <TouchableOpacity
-                            onPress={() => this.props.navigation.navigate('signin')}
+                        <TouchableOpacity onPress={() => this.props.navigation.navigate('signin')}
                             style={{
                                 backgroundColor: "white",
                                 width: wp("40%"),

@@ -45,9 +45,6 @@ import 'react-native-gesture-handler';
 import CreateAccount from './createAccount'
 
 
-
-//import Splash from './SplashScreen';
-
 const Stack = createStackNavigator();
 
 const screenOptionStyle = {
@@ -59,6 +56,8 @@ const screenOptionStyle = {
 Stack.Navigator.defaultProps = {
   headerMode: 'none',
 };
+
+
 
 
 function MyStack(navigation) {  
