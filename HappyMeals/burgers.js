@@ -7,192 +7,164 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Foundation from 'react-native-vector-icons/Foundation';
 import Tab from './tabs'
 
-class Offer extends Component {
+class Burger extends Component {
     render() {
         return (
             <View style={{
                 flex: 1,
                 backgroundColor: "white"
             }}>
-               
+
 
 
                 <View style={{
                     flex: 2,
-                    backgroundColor:"#f25a5d",
-                   
+                    backgroundColor: "#f25a5d",
+
                 }}>
 
-                  
-                <View style = {{
-                    height:100,
-                    width:wp("90%"), 
-                    justifyContent:'center',
-                    alignSelf:"center"
-                }}>
-                    <Text style = {{
-                        fontSize:40,
-                        fontWeight:"700",
-                        color:'white'
-                    }}>Latest Offers</Text>
 
-                </View>
-
-
-                <View style = {{
-                    flexDirection:'row',
-                    width:wp("90%"),
-                    alignSelf:'center',
-                    justifyContent:'space-between'
-                }}>
-
-                    <View>
-                    <Text style = {{
-                        color:'white'
-                    }}>Asad karim mughal</Text>
-                    <Text style = {{
-                        marginTop:5,
-                        color:'white'
-                    }}>Asad karim mughal</Text>
-
-                    <TouchableOpacity style = {{
-                        width:wp("30%"),
-                        borderRadius:20,
-                        height:30,
-                        marginTop:10,
-                        alignItems:'center',
-                        justifyContent:'center',
-                        backgroundColor:'white'
-                    }}>
-                        <Text>Asad karim</Text>
-                    </TouchableOpacity>
-
-                    </View>
-
-                    <View>
-                    <Image  style = {{
-                            width:180,
-                            marginTop:10,
-                            height:90 }}
-              source={require('./Assets/fastdelivery.jpg')}/>
-                    </View>
-
-                </View>
-                  
-
-
-
-                   
+                    <ImageBackground source={require('./Assets/burger.jpg')} style={{ width: '100%', alignSelf: 'center', height: 250, }}>
+                        <View style={{ position: 'absolute', top: 130, left: 0, right: 20, bottom: 0, justifyContent: 'center', alignItems: 'center' }}>
 
 
 
 
 
-                   
-                   
+
+                            <View style={{
+                                borderRadius: 15,
+                                flexDirection: 'row',
+                                alignSelf: 'flex-start',
+                                height: 50,
+
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                                marginLeft: 20,
+                                width: wp('30%')
+
+                            }}>
+                                <Text style={{
+                                    color: "white",
+                                    fontSize: 34,
+                                    fontWeight: "bold",
+                                    alignSelf: 'center'
+                                }}>Burgers </Text>
+                            </View>
+                        </View>
+                    </ImageBackground>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </View>
                 <View style={{
                     flex: 3.5,
-                    marginTop:-10,
-                    backgroundColor:'white',
+                    marginTop: -10,
+                    backgroundColor: 'white',
                     width: wp('100%'),
-                    borderTopLeftRadius:15,
-                    borderTopRightRadius:15,
+                    borderTopLeftRadius: 15,
+                    borderTopRightRadius: 15,
                     alignSelf: 'center',
-                    
+
 
                 }}>
+
+                    <View style={{
+                        width: wp('96%'),
+                        alignSelf: 'center',
+                        flexDirection: 'row',
+                        justifyContent: 'space-between'
+                    }}>
+                        <Text>Notification</Text>
+                        <Text>Icon</Text>
+                    </View>
+
                     <ScrollView>
-                        <ImageBackground source={require('./Assets/burger.jpg')} style={{ width: '98%', alignSelf: 'center', height: 200, marginTop:20 }}>
-                            <View style={{ position: 'absolute', top: 130, left: 0, right: 20, bottom: 0, justifyContent: 'center', alignItems: 'center' }}>
-                                <View style={{
-                                    backgroundColor: 'white',
-                                    borderRadius: 15,
-                                    flexDirection: 'row',
-                                    alignSelf: 'flex-end',
-                                    height: 30,
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    marginRight: 20,
-                                    width: wp('30%')
 
+                        <View style={{
+                            width:wp('90%'),
+                            alignSelf:'center',
+                            backgroundColor:'yellow',
+                            shadowColor: "#000",
+                            shadowOffset: {
+                                width: 0,
+                                height: 2,
+                            },
+                            shadowOpacity: 0.25,
+                            shadowRadius: 3.84,
+
+                            elevation: 5,
+                        }}>
+
+                            <View style={{
+                                flexDirection: 'row',
+                            
+                            }}>
+
+                                <View  >
+
+                                <Image style = {{ width:wp("40%"), height:70}}
+          source={require('./Assets/burg.jpg')}
+        />
+        
+                                    
+                                </View>
+
+                                <View style = {{
+                                
+                                    width:wp("50%"),
+                                    alignSelf:'center',
+                                    paddingLeft:8
                                 }}>
-                                    <Text style={{
+                                    <View style={{
+                                        flexDirection: 'row',
+                                        width:wp("49%"),
+                                        justifyContent:'space-between',
+                                        alignSelf:'center',
+                                        
+                                    }}>
+                                        <Text>Burger Queens </Text>
+                                        <Text>Icons</Text>
+                                    </View>
+                                    <Text>Asad karim mughal</Text>
 
-                                        alignSelf: 'center'
-                                    }}>20 - 30 mins</Text>
+                                    <View style={{
+                                        flexDirection: 'row'
+                                    }} >
+                                        <Text>icon</Text>
+                                        <Text>Asad karim mughal</Text>
+                                    </View>
+                                    <View style = {{
+                                        flexDirection:'row',
+                                        backgroundColor:'green',
+                                        justifyContent:'flex-end',
+                                        alignSelf:'flex-end'
+                                    }}>
+                                    <TouchableOpacity style = {{}}>
+                                        <Text>Press</Text>
+                                    </TouchableOpacity>
+                                    </View>
                                 </View>
                             </View>
-                        </ImageBackground>
-                        <View style={{
-                            width: wp("93%"),
-                            alignSelf: 'center',
-                            height: 45,
-                            justifyContent: 'flex-end',
-
-                        }} >
-                            <Text style={{
-                                fontWeight: 'bold',
-                                fontSize: 30,
-                            }}>Hollywood starz cafe</Text>
-                        </View>
-                        <View style={{
-                            width: wp('93%'),
-                            flexDirection: 'row',
-                            alignSelf: 'center',
-                            alignContent:'center'
-                        }}>
-                            <Foundation name="star" size={25} color="red" />
-                            <Text style={{
-                                fontSize: 17,
-                                marginBottom: 20
-                            }}> <Text style = {{ color:"#d9cfcf"}}>4.9</Text> (124 ratings) Cafe -Western Food - $$</Text>
                         </View>
 
-                        <ImageBackground source={require('./Assets/burger.jpg')} style={{ width: '98%', alignSelf: 'center', height: 200, }}>
-                            <View style={{ position: 'absolute', top: 130, left: 0, right: 20, bottom: 0, justifyContent: 'center', alignItems: 'center' }}>
-                                <View style={{
-                                    backgroundColor: 'white',
-                                    borderRadius: 15,
-                                    flexDirection: 'row',
-                                    alignSelf: 'flex-end',
-                                    height: 30,
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    marginRight: 20,
-                                    width: wp('30%')
-
-                                }}>
-                                    <Text style={{
-
-                                        alignSelf: 'center'
-                                    }}>20 - 30 mins</Text>
-                                </View>
-                            </View>
-                        </ImageBackground>
-                        <View style={{
-                            width: wp("93%"),
-                            alignSelf: 'center',
-                            height: 45,
-                            justifyContent: 'flex-end',
-
-                        }} >
-                            <Text style={{
-                                fontWeight: 'bold',
-                                fontSize: 30,
-                            }}>Hollywood starz cafe</Text>
-                        </View>
-                        <View style={{
-                            width: wp('93%'),
-                            flexDirection: 'row',
-                            alignSelf: 'center',
-                            alignContent:'center'
-                        }}>
-                            <Foundation name="star" size={25} color="red" />
-                            <Text style={{
-                                fontSize: 17
-                            }}><Text style = {{ color:"#d9cfcf"}}>4.9</Text> (124 ratings) Cafe -Western Food - $$</Text>
-                        </View>
                     </ScrollView>
                 </View>
             </View>
@@ -200,7 +172,7 @@ class Offer extends Component {
     }
 }
 
-export default Offer;
+export default Burger;
 
 const styles = StyleSheet.create({
     img: {

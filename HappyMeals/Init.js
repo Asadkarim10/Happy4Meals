@@ -44,6 +44,7 @@ import 'react-native-gesture-handler';
  import Delivering from './Delivering'
 import CreateAccount from './createAccount'
 import Offer from './offer'
+import Burger from './burgers';
 
 const Stack = createStackNavigator();
 
@@ -63,9 +64,10 @@ Stack.Navigator.defaultProps = {
 function MyStack(navigation) {  
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="welcome">
+      <Stack.Navigator initialRouteName="burger">
         <Stack.Screen name="welcome" component={Welcome} />
         <Stack.Screen name="signin" component={Signin} />
+        <Stack.Screen name="burger" component={Burger} />
         <Stack.Screen name="createAccount" component={CreateAccount} />
         <Stack.Screen name="offer" component={Offer} />
         <Stack.Screen name="login" component={Login} />
